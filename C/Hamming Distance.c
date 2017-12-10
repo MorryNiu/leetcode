@@ -1,6 +1,6 @@
 /* primary */
 
-int HammingDistance(int x, int y){
+int hammingDistance(int x, int y){
     int res = 0, i, code = x ^ y;
     for (i = 0; i < 32; i++) {
         res += (code >> i) & 1;
@@ -11,7 +11,7 @@ int HammingDistance(int x, int y){
 
 /* improved approach */
 
-int HammingDistance(int x, int y){
+int hammingDistance(int x, int y){
     int res = 0, code = x ^ y, i;
     while (code) {
         res++;
